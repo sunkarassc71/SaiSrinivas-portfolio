@@ -1,4 +1,5 @@
 import React from 'react'
+import profilePic from '../assets/Image.jpg'
 
 function AboutMe() {
     return (
@@ -21,7 +22,7 @@ function AboutMe() {
                     <div className="md:w-1/4 flex justify-center">
                         <div className="relative w-64 h-54 group overflow-hidden rounded-lg shadow-md">
                             <img
-                                src="/src/assets/image.jpg"
+                                src={profilePic}
                                 alt="Profile"
                                 className="w-full h-full object-cover border-4 border-white group-hover:border-violet-500 group-hover:scale-110 transition duration-300"
                             />
