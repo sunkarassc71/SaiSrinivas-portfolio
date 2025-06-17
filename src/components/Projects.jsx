@@ -9,6 +9,11 @@ export default function Projects() {
     projectName: "Portfolio Site",
     description: "A personal website showcasing projects, skills,Education, Experience and contact information.",
     company:"Own Project  "
+  },
+  {
+    projectName: "Portfolio Site",
+    description: "A personal website showcasing projects, skills,Education, Experience and contact information for Hem Chand Meka.",
+    company:"Own Project  "
   }
 ];
   return (
