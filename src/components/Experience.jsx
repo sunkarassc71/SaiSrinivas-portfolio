@@ -13,9 +13,11 @@ function Experience() {
                 <div className="relative">
                     <div className="absolute -left-[0.65rem] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
                     <p className="text-sm text-violet-500 font-semibold">2022 - Present</p>
-                    <p className="text-lg font-medium">
-                        <strong className='text-violet-500'>Software Associate</strong><br />
-                        Hyderabad · Working on end-to-end web applications using React, Angular, Spring Boot, and MySQL. Built scalable solutions.
+                    <p className="text-sm font-medium">
+                        <strong className='text-violet-500 text-lg'>Software Associate</strong><br />
+                        Hyderabad · I developed 15+ reusable Angular components to speed up
+                        development and improve maintainability. Implemented RBAC and MFA (via Twilio) to enhance security,
+                        cutting unauthorized access by 40%. Optimized MySQL queries with Liquibase, improving API performance by 75%, and automated CI/CD pipelines in Azure DevOps to reduce deployment time and errors.
                     </p>
                 </div>
 
@@ -23,8 +25,8 @@ function Experience() {
                 <div className="relative">
                     <div className="absolute -left-[0.65rem] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
                     <p className="text-sm text-violet-500 font-semibold">2020 - 2022</p>
-                    <p className="text-lg font-medium">
-                        <strong className='text-violet-500'>Software Intern</strong><br />
+                    <p className="text-sm font-medium">
+                        <strong className='text-violet-500 text-lg'>Software Intern</strong><br />
                         Vijayawada · Worked on Java backend systems and gained foundational experience in REST APIs and database integration.
                     </p>
                 </div>
