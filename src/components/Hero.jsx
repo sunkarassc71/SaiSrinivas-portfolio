@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import resume from '../assets/Resume.pdf';
+import resume from '../assets/SaiSrinivasSunkaraResume.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
