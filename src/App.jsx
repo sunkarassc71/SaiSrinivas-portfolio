@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Education from './components/Education';
 import AboutMe from './components/AboutMe';
 import Experience from './components/Experience';
+import CustomerDetails from './components/CustomerDetails';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <Experience />
       <Education />
       <Skills />
+      <CustomerDetails />
       <Footer />
     </div>
   )
