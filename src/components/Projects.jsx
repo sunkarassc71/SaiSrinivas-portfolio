@@ -15,10 +15,12 @@ export default function Projects() {
     },
     {
       projectName: "Portfolio Site",
-      description: "A digital showcase of my journey — blending projects, skills, education, experience, and ways to connect — all crafted to tell my story in code and design.",
+      description: "A responsive digital portfolio highlighting my projects, skills, education, and experience — designed to showcase my journey and make it easy to connect with site visitors.",
       company: "Own Project",
       image: projectImage2,
-      frontend: "React, Tailwind CSS"
+      frontend: "React, Tailwind CSS",
+      backend: "Node.js with Express",
+      database: 'MongoDB (via Mongoose ODM)'
     }
   ];
   return (
