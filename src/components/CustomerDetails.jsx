@@ -1,6 +1,7 @@
 import React, { useState,useEffect } from "react";
 import axios from "axios";
 
+const baseURL = import.meta.env.VITE_API_BASE_URL;
 const CustomerDetails = () => {
     const [formData, setFormData] = useState({
         name: "",
@@ -26,7 +27,7 @@ const CustomerDetails = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post("https://backend-users-api.azurewebsites.net/api/users", formData);
+            await axios.post(`${baseURL}/users`, formData);
             setStatus("✅Deatils Submitted Succesfully");
             setFormData({ name: "", email: "", phone: "" });
         } catch (err) {
