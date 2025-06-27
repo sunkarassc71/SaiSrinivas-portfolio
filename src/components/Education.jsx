@@ -13,7 +13,7 @@ function Education() {
             2015 - 2019
           </span>
           <p className="text-lg mt-2">
-            Bachelors in Mechanical Engineering , <strong>JNTU Kakinada</strong>.
+            Bachelors in Mechanical Engineering, <strong>JNTU Kakinada</strong>.
           </p>
         </div>
 

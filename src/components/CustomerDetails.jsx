@@ -39,7 +39,7 @@ const CustomerDetails = () => {
     return (
         <div className="p-8 w-full max-w-lg mx-auto">
             <h1 className="text-2xl font-bold mb-6 text-center text-violet-500">
-                Customer Details
+                Get In Touch
             </h1>
 
             <form onSubmit={handleSubmit} className="space-y-4">
@@ -73,9 +73,9 @@ const CustomerDetails = () => {
 
                 <button
                     type="submit"
-                    className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition"
+                    className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-green-600 transition hover:"
                 >
-                    Submit
+                    Send Message
                 </button>
             </form>
 
