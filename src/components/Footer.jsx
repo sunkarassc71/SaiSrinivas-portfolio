@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,7 +19,7 @@ export default function Footer() {
           <a className="hover:underline" target="_blank" rel="noopener noreferrer" href="https://github.com/sunkarassc71">saisrinivas</a>
         </span>
         <span className="hidden md:inline">|</span>
-        <span>Mobile: +91 9966-119-332</span>
+        <span><FontAwesomeIcon className="inline-block" icon={faPhone} /> +91 9966-119-332</span>
       </address>
     </footer>
   );
