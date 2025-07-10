@@ -3,13 +3,13 @@ import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import resume from '../assets/SaiSrinivasSunkaraResume.pdf';
-// import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
   return (
     <section className="text-center py-20 text-black">
       <h3 className="text-5xl font-bold mb-4 text-violet-500">Hey there! 😍</h3>
-      {/* <div className="text-2xl font-bold text-violet-600">
+      <div className="text-2xl font-bold text-violet-600">
         <TypeAnimation
           sequence={[
             "Full Stack Developer",
@@ -23,7 +23,7 @@ export default function Hero() {
           speed={50}
           repeat={Infinity}
         />
-      </div> */}
+      </div>
       <p className="text-lg max-w-4xl mx-auto">Crafting elegant, scalable web solutions with a blend of <span className='text-violet-500 font-medium'>React, Angular, Java, Spring Boot, and MySQL</span>.
         Turning ideas into interactive experiences — one line of code at a time.</p>
       <div className="mt-6">
