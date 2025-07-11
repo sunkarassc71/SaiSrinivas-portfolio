@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Header() {
   // Scroll to top when the name is clicked
   const loadHomepage = () => {
@@ -13,12 +15,12 @@ export default function Header() {
           tabIndex={0}
           aria-label="Go to top"
         >
-          Sunkara Sai Srinivas Chowdary
+          <Link to="/" className="text-white no-underline">Sunkara Sai Srinivas Chowdary</Link>
         </h1>
         <nav className="space-x-4">
-          <a href="#projects" className="hover:underline">My work</a>
-          <a href="#experience" className="hover:underline">Experience</a>
-          <a href="#aboutme" className="hover:underline">About me</a>
+          <Link to="/projects" className="hover:underline">My work</Link>
+          <Link to="/experience" className="hover:underline">Experience</Link>
+          <Link to="/aboutme" className="hover:underline">About me</Link>
         </nav>
       </div>
     </header>

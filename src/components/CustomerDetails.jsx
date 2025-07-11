@@ -37,7 +37,7 @@ const CustomerDetails = () => {
     };
 
     return (
-        <div className="p-8 w-full max-w-lg mx-auto">
+        <div className="p-8 w-full max-w-lg bg-gray-100 mx-auto">
             <h1 className="text-2xl font-bold mb-6 text-center text-violet-500">
                 Get In Touch
             </h1>
