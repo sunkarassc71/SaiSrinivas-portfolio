@@ -3,7 +3,7 @@ import profilePic from "../assets/Image.jpg";
 
 function AboutMe() {
   return (
-    <div id="aboutme" className="py-16 bg-gray-100 px-4">
+    <div id="aboutme" className="py-16 bg-gradient-to-b from-indigo-100 via-white to-violet-100 px-4">
       <div className="text-black">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Left Side - Details */}

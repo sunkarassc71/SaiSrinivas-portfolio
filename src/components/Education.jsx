@@ -2,7 +2,7 @@ import React from 'react'
 
 function Education() {
   return (
-    <div id="education" className="py-16 px-4 md:px-24 bg-gray-100 text-gray-900">
+    <div id="education" className="py-16 px-4 md:px-24 bg-gradient-to-b from-indigo-100 via-white to-violet-100 text-gray-900">
       <h3 className="text-3xl font-bold text-center mb-12 text-violet-500">
         Education
       </h3>
