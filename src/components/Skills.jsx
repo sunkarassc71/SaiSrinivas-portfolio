@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <section id="skills" className="py-16 px-4">
+    <section id="skills" className="py-16 px-4 bg-gradient-to-b from-indigo-100 via-white to-violet-100">
       <h3 className="text-3xl font-bold text-center mb-10 text-indigo-600"><span className="text-violet-500">Skills</span></h3>
       <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto text-center">
         {["React", "Angular", "Java", "Spring Boot","Hibernate", "MySQL", "MongoDB","Tailwind CSS"].map((skill, index) => (
