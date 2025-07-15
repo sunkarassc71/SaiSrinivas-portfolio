@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const baseURL = import.meta.env.VITE_API_BASE_URL;
@@ -8,31 +8,46 @@ const CustomerDetails = () => {
         email: "",
         phone: "",
     });
-
     const [status, setStatus] = useState("");
-    useEffect(() => {
-        if (status) {
-            const timer = setTimeout(() => {
-                setStatus(""); // clear after 5 seconds
-            }, 5000); // 5,000ms = 5s
+    const [error, setError] = useState("");
+    const [loading, setLoading] = useState(false);
 
-            return () => clearTimeout(timer); // cleanup on unmount/change
+    useEffect(() => {
+        if (status || error) {
+            const timer = setTimeout(() => {
+                setStatus("");
+                setError("");
+            }, 5000);
+            return () => clearTimeout(timer);
         }
-    }, [status]);
+    }, [status, error]);
 
     const handleChange = (e) => {
         setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
     };
 
+    const validatePhone = (phone) => {
+        // Simple validation: 10-15 digits, can start with +
+        return /^\+?\d{10,15}$/.test(phone);
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setError("");
+        if (!validatePhone(formData.phone)) {
+            setError("Please enter a valid phone number (10-15 digits, optional +)");
+            return;
+        }
+        setLoading(true);
         try {
             await axios.post(`${baseURL}/users`, formData);
-            setStatus("✅Deatils Submitted Succesfully");
+            setStatus("✅ Details Submitted Successfully");
             setFormData({ name: "", email: "", phone: "" });
         } catch (err) {
-            setStatus("❌ Failed to save user.");
+            setError("❌ Failed to save user.");
             console.error(err);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -73,9 +88,13 @@ const CustomerDetails = () => {
 
                 <button
                     type="submit"
-                    className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-green-600 transition hover:"
+                    className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-green-600 transition flex items-center justify-center"
+                    disabled={loading}
                 >
-                    Send Message
+                    {loading ? (
+                        <span className="loader mr-2"></span>
+                    ) : null}
+                    {loading ? "Sending..." : "Send Message"}
                 </button>
             </form>
 
@@ -84,6 +103,26 @@ const CustomerDetails = () => {
                     {status}
                 </p>
             )}
+            {error && (
+                <p className="mt-4 text-center text-sm text-red-600 font-medium">
+                    {error}
+                </p>
+            )}
+            <style>{`
+                .loader {
+                  border: 2px solid #f3f3f3;
+                  border-top: 2px solid #6366f1;
+                  border-radius: 50%;
+                  width: 16px;
+                  height: 16px;
+                  animation: spin 1s linear infinite;
+                  display: inline-block;
+                }
+                @keyframes spin {
+                  0% { transform: rotate(0deg); }
+                  100% { transform: rotate(360deg); }
+                }
+            `}</style>
         </div>
     );
 };
