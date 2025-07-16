@@ -52,7 +52,7 @@ const CustomerDetails = () => {
     };
 
     return (
-        <div className="p-8 w-full max-w-lg bg-gradient-to-b from-indigo-100 via-white to-violet-100 mx-auto">
+        <div className="p-8 w-full max-w-lg bg-gradient-to-b mx-auto">
             <h1 className="text-2xl font-bold mb-6 text-center text-violet-500">
                 Get In Touch
             </h1>
