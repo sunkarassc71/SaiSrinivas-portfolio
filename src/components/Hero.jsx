@@ -1,7 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import {FaPhoneAlt ,FaLinkedin,FaCloudDownloadAlt } from 'react-icons/fa'
 import resume from '../assets/SaiSrinivasSunkaraResume.pdf';
 import { TypeAnimation } from 'react-type-animation';
 
@@ -26,17 +23,28 @@ export default function Hero() {
       </div>
       <p className="text-lg max-w-4xl mx-auto mb-6">Crafting elegant, scalable web solutions with a blend of <span className='text-violet-500 font-medium'>React, Angular, Java, Spring Boot, and MySQL</span>. Turning ideas into interactive experiences — one line of code at a time.</p>
       <div className="flex flex-col md:flex-row justify-center gap-4 mt-6">
-        <a type=".pdf" href={resume} target="_blank" rel="noopener noreferrer" className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:text-white hover:bg-gradient-to-r from-blue-500 to-violet-600 shadow transition flex items-center gap-2"><FontAwesomeIcon icon={faArrowDown} /> Resume</a>
-        <a href="#contact" className="bg-white text-indigo-600 px-6 py-3 ml-2 rounded-lg font-semibold hover:bg-gray-100 transition  hover:text-white hover:bg-gradient-to-r from-blue-500 to-violet-600">
-          <FontAwesomeIcon icon={faPhone} /> Contact
+        <a
+          type=".pdf"
+          href={resume}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold shadow transition flex items-center gap-2 hover:text-white hover:bg-gradient-to-r from-blue-500 to-violet-600"
+        >
+          <FaCloudDownloadAlt /> Resume
+        </a>
+        <a
+          href="#contact"
+          className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold shadow transition flex items-center gap-2 hover:text-white hover:bg-gradient-to-r from-blue-500 to-violet-600"
+        >
+          <FaPhoneAlt /> Contact
         </a>
         <a
           href="https://www.linkedin.com/in/sai-srinivas-chowdary-sunkara-3073b5122/"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold hover:text-white hover:bg-gradient-to-r from-blue-500 to-violet-600 shadow transition flex items-center gap-2"
+          className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold shadow transition flex items-center gap-2 hover:text-white hover:bg-gradient-to-r from-blue-500 to-violet-600"
         >
-          <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+          <FaLinkedin /> LinkedIn
         </a>
       </div>
     </section>
