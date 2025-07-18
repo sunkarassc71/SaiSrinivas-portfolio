@@ -3,13 +3,13 @@ import profilePic from "../assets/Image.jpg";
 
 function AboutMe() {
   return (
-    <div id="aboutme" className="py-16 bg-gradient-to-b from-indigo-100 via-white to-violet-100 px-4">
+    <div id="aboutme" className="py-16 bg-gradient-to-b text-white px-4">
       <div className="text-black">
         <div className="flex flex-col md:flex-row items-center gap-8">
           {/* Left Side - Details */}
           <div className="md:w-3/4 space-y-4">
             <h2 className="text-3xl font-bold text-violet-500">About Me</h2>
-            <p>
+            <p className="text-white">
               From the quiet fields of a small village near Vijayawada to the
               bustling tech scene of Hyderabad, my journey has been rooted in
               curiosity and growth. By day, I craft full-stack solutions as a
@@ -19,15 +19,15 @@ function AboutMe() {
               — a perfect balance of innovation and tradition.
             </p>
             <ul className="space-y-2">
-              <li>
+              <li className="text-white">
                 <strong className="text-blue-500">📍 Location:</strong>{" "}
                 Hyderabad, India
               </li>
-              <li>
+              <li className="text-white">
                 <strong className="text-blue-500">🎂 DOB:</strong> July 1st,
                 1997
               </li>
-              <li>
+              <li className="text-white">
                 <strong className="text-blue-500">💼 Employment:</strong> System
                 Soft Technologies
               </li>
