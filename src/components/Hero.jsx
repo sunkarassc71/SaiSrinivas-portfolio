@@ -4,7 +4,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
   return (
-    <section className="relative text-center py-20 text-black bg-gradient-to-b">
+    <section className="relative text-center py-20 text-white bg-gradient-to-b">
       <h3 className="text-5xl font-bold mb-4 text-violet-500 animate-bounce-slow">Hey there! 😍</h3>
       <div className="text-2xl font-bold text-violet-600 mb-4">
         <TypeAnimation

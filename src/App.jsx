@@ -13,7 +13,7 @@ import CustomerDetails from './components/CustomerDetails';
 function App() {
 
   return (
-    <div className="bg-gray-50 text-gray-900">
+    <div className="bg-black">
       <Header />
       <Routes>
         <Route path="/" element={<>
