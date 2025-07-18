@@ -20,10 +20,9 @@ export default function Skills() {
         {skills.map((skill, index) => (
           <span
             key={index}
-            className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium flex items-center gap-2 hover:scale-110 transition duration-300 cursor-pointer relative group"
+            className=" text-blue-600 px-4 py-2 rounded-full text-xl font-medium flex items-center gap-2 hover:scale-110 transition duration-300 cursor-pointer relative group"
           >
             {skill.icon}
-            {skill.name}
             <span className="absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-max px-2 py-1 text-xs text-white bg-indigo-600 rounded opacity-0 group-hover:opacity-100 transition pointer-events-none">{skill.name}</span>
           </span>
         ))}
