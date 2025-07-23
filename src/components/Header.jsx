@@ -13,7 +13,7 @@ export default function Header() {
     { to: '/aboutme', label: 'About me' },
   ];
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-blue-500 to-violet-600 text-white shadow-md">
+    <header className="sticky top-0 z-50 bg-gradient-to-r bg-black text-white shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-3">
           <img src={logo} alt="Logo" className="w-10 h-10 object-contain" style={{ filter: 'brightness(0) invert(1)' }} />
