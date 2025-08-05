@@ -34,7 +34,7 @@ export default function Hero() {
             <FaPhoneAlt /> Contact
           </a>
           <a
-            href="https://www.linkedin.com/in/sai-srinivas-chowdary-sunkara-3073b5122/"
+            href="https://www.linkedin.com/in/sai-srinivas-sunkara-3073b5122/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-indigo-600 px-6 py-3 rounded-lg font-semibold shadow transition flex items-center gap-2 hover:text-white hover:bg-gradient-to-r from-blue-500 to-violet-600"
