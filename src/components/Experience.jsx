@@ -8,19 +8,31 @@ function Experience() {
                 Experience
             </h3>
             <div className="relative border-l-4 border-blue-500 pl-6 space-y-10 max-w-2xl mx-auto">
-                {/* First Experience */}
+                {/* Third Experience */}
                 <div className="relative animate-fade-in">
                     <div className="absolute -left-[0.65rem] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-black"></div>
                     <div className="flex items-center gap-2 mb-1">
                         <FaBuilding className="text-blue-500" />
-                        <span className="text-sm text-violet-500 font-semibold">2022 - Present</span>
+                        <span className="text-sm text-violet-500 font-semibold">2025 - Present</span>
+                    </div>
+                    <p className="text-sm font-medium">
+                        <strong className='text-violet-500 text-lg'>Senior Software Engineer</strong> <span className="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs ml-2">Mphasis</span><br />
+                        Hyderabad . Working with microservices architecture and cloud technologies to build scalable applications.
+                    </p>
+                </div>
+                {/* Second Experience */}
+                <div className="relative animate-fade-in">
+                    <div className="absolute -left-[0.65rem] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-black"></div>
+                    <div className="flex items-center gap-2 mb-1">
+                        <FaBuilding className="text-blue-500" />
+                        <span className="text-sm text-violet-500 font-semibold">2022 - 2025</span>
                     </div>
                     <p className="text-sm font-medium">
                         <strong className='text-violet-500 text-lg'>Software Associate</strong> <span className="bg-blue-100 text-blue-600 px-2 py-1 rounded-full text-xs ml-2">System Soft Technologies</span><br />
                         Hyderabad · I developed 15+ reusable Angular components to speed up development and improve maintainability. <span className="inline-flex items-center gap-1 bg-green-100 text-green-700 px-2 py-1 rounded-full text-xs"><FaAward /> RBAC & MFA (Twilio)</span> to enhance security, cutting unauthorized access by 40%. Optimized MySQL queries with Liquibase, improving API performance by 75%, and automated CI/CD pipelines in Azure DevOps to reduce deployment time and errors.
                     </p>
                 </div>
-                {/* Second Experience */}
+                {/* First Experience */}
                 <div className="relative animate-fade-in" style={{ animationDelay: '0.3s' }}>
                     <div className="absolute -left-[0.65rem] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-black"></div>
                     <div className="flex items-center gap-2 mb-1">

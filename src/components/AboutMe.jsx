@@ -28,8 +28,7 @@ function AboutMe() {
                 1997
               </li>
               <li className="text-white">
-                <strong className="text-blue-500">💼 Employment:</strong> System
-                Soft Technologies
+                <strong className="text-blue-500">💼 Employment:</strong> Mphasis
               </li>
             </ul>
           </div>
